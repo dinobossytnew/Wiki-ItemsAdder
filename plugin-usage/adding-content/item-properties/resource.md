@@ -108,7 +108,7 @@ If you want to force the usage of a defined `custom_model_data` (`CustomModelDat
 ```yaml
     resource:
       material: CLOCK
-      model_id: 4000
+      custom_model_data : 4000
       generate: false
       model_path: "item/my_custom_item_model"
 ```
@@ -123,7 +123,7 @@ items:
     resource:
       material: DIAMOND
       generate: true
-      model_id: 4000
+      custom_model_data : 4000
       textures:
       - item/my_custom_texture.png
 ```
@@ -131,7 +131,7 @@ items:
 {% hint style="warning" %}
 #### **IMPORTANT**
 
-If you previously created this item and already used `/iazip` command and now you change the `model_id` you have to use this command.\
+If you previously created this item and already used `/iazip` command and now you change the `custom_model_data ` you have to use this command.\
 It's **very important** to run the command `/iacleancache items` to **remove unused IDs** and **update** the **changed ID**.
 {% endhint %}
 
